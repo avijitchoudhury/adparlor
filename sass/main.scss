@@ -1,0 +1,56 @@
+*,
+*::after, 
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.header {
+  position: relative;
+  height: 8vh;
+  background-color: rgb(52,72,93); 
+
+    &-main {
+        display: flex;
+        height: 100%;
+
+        & a {
+          text-decoration: none;
+          color: white;
+          text-transform: uppercase;
+          font-size: .8rem;
+          margin-left: 20px;
+        }
+
+      &__primary {
+        position: relative;
+        top: 5px;
+        left: 2rem;
+
+
+        & a {
+          position: relative;
+          left: 3rem;
+        }
+
+          &-image {
+            position: relative;
+            height: 4vh;
+            top: .5rem;
+            left: 3rem;
+          }
+      }
+        
+        &__secondary {
+          text-align: right;
+          width: 50%;
+          
+          & a {
+            display: inline-block;
+            position: relative;
+            top: 1.35rem;
+          }
+        }
+      }
+    }

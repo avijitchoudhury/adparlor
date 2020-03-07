@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+.header {
+  position: relative;
+  height: 8vh;
+  background-color: #34485d; }
+  .header-main {
+    display: flex;
+    height: 100%; }
+    .header-main a {
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+      font-size: .8rem;
+      margin-left: 20px; }
+    .header-main__primary {
+      position: relative;
+      top: 5px;
+      left: 2rem; }
+      .header-main__primary a {
+        position: relative;
+        left: 3rem; }
+      .header-main__primary-image {
+        position: relative;
+        height: 4vh;
+        top: .5rem;
+        left: 3rem; }
+    .header-main__secondary {
+      text-align: right;
+      width: 50%; }
+      .header-main__secondary a {
+        display: inline-block;
+        position: relative;
+        top: 1.35rem; }
