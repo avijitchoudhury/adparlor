@@ -6,6 +6,8 @@
   box-sizing: inherit;
 }
 
+
+//header section
 .header {
   position: relative;
   height: 8vh;
@@ -54,3 +56,112 @@
         }
       }
     }
+
+
+// about section
+
+.section {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  
+  &-main {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-left: 6rem;
+  }
+
+  &-about {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    &__primary-span {
+      display: flex;
+      flex-flow: column;
+      padding-bottom: 0.8rem;
+      font-size: 4rem;
+      color: rgb(52,72,93);
+      letter-spacing: 1px;
+
+      &:first-child {
+        font-weight: normal;
+      }
+
+    }
+        &_btn {
+          display: inline-block;
+          position: relative;
+          border-radius: 3px;
+          text-decoration: none;
+          width: 40%;
+          height: 2rem;
+          text-transform: uppercase;
+          background-color: #FC3367;
+          color: white;
+          margin-top: 30px;
+          text-align: center;
+          padding-top: 15px;
+          transition: all .2s;
+
+          &:hover {
+            transform: translateY(-.3rem);
+            box-shadow: 0 .2rem .5rem black;
+
+          }
+        }
+
+    &_sub {
+      width: 50%;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+
+      &-image{
+        width: auto;
+        height: 40rem;
+        
+      }
+    }
+  }
+
+  &-secondary__paragraph {
+      font-size: 1.5rem;
+      color: rgb(52,72,93);
+      letter-spacing: 1px;
+    }
+}
+
+//media section
+.section-media {
+  width: 100%;
+  height: 75vh;
+  background-color: #34495C;
+
+    &-primary {
+      margin-left: 16rem;
+      margin-right: 16rem;
+      height: 100%;
+      text-align: center;
+      position: relative;
+      top: 11rem;
+
+        &__title {
+          color: white;
+          font-size: 3.5rem;
+        }
+
+        &__paragraph {
+          color: white;
+          margin-top: 2rem;
+          font-size: 1.3rem;
+        }
+      
+        &__arrow {
+          transform: rotate(-90deg);
+          width: 1.5rem;
+          margin-top: 2rem;
+        }
+    }
+}
