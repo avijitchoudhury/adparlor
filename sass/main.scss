@@ -63,7 +63,7 @@
 .section {
   display: flex;
   width: 100%;
-  height: 90vh;
+  height: 75vh;
   
   &-main {
     display: flex;
@@ -81,7 +81,7 @@
       display: flex;
       flex-flow: column;
       padding-bottom: 0.8rem;
-      font-size: 4rem;
+      font-size: 3.5rem;
       color: rgb(52,72,93);
       letter-spacing: 1px;
 
@@ -107,7 +107,7 @@
 
           &:hover {
             transform: translateY(-.3rem);
-            box-shadow: 0 .2rem .5rem black;
+            box-shadow: 0 .2rem .5rem gray;
 
           }
         }
@@ -156,12 +156,57 @@
           color: white;
           margin-top: 2rem;
           font-size: 1.3rem;
+          line-height: 2rem;
+          letter-spacing: 0;
         }
       
         &__arrow {
           transform: rotate(-90deg);
           width: 1.5rem;
           margin-top: 2rem;
+          transition: all .2s;
+
+          &:hover {
+            width: 1.8rem;
+            cursor: pointer;
+          }
         }
     }
+}
+
+//facebook section
+
+.facebook {
+  // border-bottom: 1px dashed lightgray;
+
+
+  &-about-header {
+    font-size: 3rem;
+  }
+  
+  &-about-paragraph {
+    font-size: 1.15rem;
+    line-height: 2rem;
+    letter-spacing: 0;
+  }
+  
+  &-about_btn {
+    background-color: white; 
+    color: gray;
+    border: 1px solid lightgray;
+    width: 12rem;
+    font-size: .8rem; 
+    padding-top: 20px;
+  }
+}
+
+//instagram section
+.instagram {
+  display: flex;
+  flex-flow: row-reverse;
+
+  &-about {
+    margin-right: 6rem;
+    margin-left: 0;
+  }
 }
