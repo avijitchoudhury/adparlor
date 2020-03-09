@@ -174,9 +174,10 @@
     }
 }
 
-//facebook section
+//facebook and instagram section
 
-.facebook {
+//common social media section designs
+.socialmedia {
   // border-bottom: 1px dashed lightgray;
 
 
@@ -200,13 +201,19 @@
   }
 }
 
-//instagram section
+//specific instagram section
 .instagram {
   display: flex;
   flex-flow: row-reverse;
+  border-top: 1px solid gray;
 
   &-about {
     margin-right: 6rem;
     margin-left: 0;
   }
+}
+
+//specific youtube section
+.youtube {
+  border-top: 1px solid gray;
 }

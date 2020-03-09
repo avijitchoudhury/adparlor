@@ -119,15 +119,15 @@
         width: 1.8rem;
         cursor: pointer; }
 
-.facebook-about-header {
+.socialmedia-about-header {
   font-size: 3rem; }
 
-.facebook-about-paragraph {
+.socialmedia-about-paragraph {
   font-size: 1.15rem;
   line-height: 2rem;
   letter-spacing: 0; }
 
-.facebook-about_btn {
+.socialmedia-about_btn {
   background-color: white;
   color: gray;
   border: 1px solid lightgray;
@@ -137,7 +137,11 @@
 
 .instagram {
   display: flex;
-  flex-flow: row-reverse; }
+  flex-flow: row-reverse;
+  border-top: 1px solid gray; }
   .instagram-about {
     margin-right: 6rem;
     margin-left: 0; }
+
+.youtube {
+  border-top: 1px solid gray; }
