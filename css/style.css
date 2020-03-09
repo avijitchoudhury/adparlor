@@ -184,3 +184,33 @@
       transition: all .1s; }
       .section-reviews-primary__arrow2:hover {
         cursor: pointer; }
+
+.section-getStarted {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 100%;
+  height: 75vh; }
+  .section-getStarted-title {
+    text-align: center;
+    margin-left: 12rem;
+    margin-right: 12rem; }
+    .section-getStarted-title__header {
+      font-size: 2.5rem;
+      color: #34485D;
+      margin-bottom: 2rem; }
+  .section-getStarted-main {
+    text-align: center;
+    margin-left: 12rem;
+    margin-right: 12rem; }
+    .section-getStarted-main__para {
+      font-size: 1.2rem;
+      color: #34485D; }
+  .section-getStarted-sub {
+    text-align: center;
+    margin-left: 12rem;
+    margin-right: 12rem; }
+    .section-getStarted-sub_btn {
+      width: 32%;
+      height: 1.8rem;
+      font-size: .8rem; }

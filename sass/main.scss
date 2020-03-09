@@ -273,3 +273,47 @@
     }
   }
 }
+
+//Get started section
+
+.section-getStarted {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 100%;
+  height: 75vh;
+
+  &-title {
+    text-align: center;
+    margin-left: 12rem;
+    margin-right: 12rem;
+
+    &__header {
+      font-size: 2.5rem;
+      color: #34485D;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &-main {
+    text-align: center;
+    margin-left: 12rem;
+    margin-right: 12rem;
+
+    &__para {
+      font-size: 1.2rem;
+      color: #34485D;
+    }
+  }
+ 
+  &-sub {
+    text-align: center;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    &_btn {
+      width: 32%;
+      height: 1.8rem;
+      font-size: .8rem;
+    }
+  }
+}
