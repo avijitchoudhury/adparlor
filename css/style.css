@@ -145,3 +145,42 @@
 
 .youtube {
   border-top: 1px solid gray; }
+
+.section-reviews {
+  width: 100%;
+  height: 75vh;
+  background-image: url("../Assets/Client Logos and Media/BG_Hills_Banner.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  display: flex; }
+  .section-reviews-primary {
+    display: flex;
+    justify-content: center;
+    margin-left: 6rem;
+    margin-right: 6rem; }
+    .section-reviews-primary__logo {
+      width: 12rem; }
+    .section-reviews-primary-main {
+      display: flex;
+      flex-flow: column;
+      justify-content: center; }
+      .section-reviews-primary-main__paragraph {
+        color: white;
+        margin: 0 3rem; }
+        .section-reviews-primary-main__paragraph:last-child {
+          margin-top: 2.7rem; }
+    .section-reviews-primary__arrow1 {
+      width: 1rem;
+      margin-bottom: 1rem;
+      transition: all .1s; }
+      .section-reviews-primary__arrow1:hover {
+        width: 1.2rem;
+        cursor: pointer; }
+    .section-reviews-primary__arrow2 {
+      transform: rotate(180deg);
+      width: 1rem;
+      margin-bottom: 1rem;
+      transition: all .1s; }
+      .section-reviews-primary__arrow2:hover {
+        cursor: pointer; }
