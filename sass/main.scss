@@ -1,6 +1,9 @@
+$breakpoint-phone: 375px;
+
 *,
 *::after, 
 *::before {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: inherit;
@@ -19,10 +22,15 @@
 
         & a {
           text-decoration: none;
-          color: white;
+          color: lightgray;
           text-transform: uppercase;
           font-size: .8rem;
           margin-left: 20px;
+
+          &:hover {
+          font-weight: 300;
+          color: white;
+          }
         }
 
       &__primary {
@@ -32,8 +40,15 @@
 
 
         & a {
+          font-weight: 100;
           position: relative;
           left: 3rem;
+          letter-spacing: 1px;
+
+           &:hover {
+          font-weight: 300;
+          color: white;
+          }
         }
 
           &-image {
@@ -49,6 +64,7 @@
           width: 50%;
           
           & a {
+            font-weight: 100;
             display: inline-block;
             position: relative;
             top: 1.35rem;
@@ -84,7 +100,7 @@
   }
 
     //media header
-$breakpoint-phone: 375px;
+
 
 
 
@@ -116,7 +132,7 @@ $breakpoint-phone: 375px;
       letter-spacing: 1px;
 
       &:first-child {
-        font-weight: normal;
+        font-weight: 400;
       }
 
     }
@@ -260,8 +276,6 @@ $breakpoint-phone: 375px;
     }
    }
  }
-  
-  //facebook and instagram section
   
   //common social media section designs
   .socialmedia {

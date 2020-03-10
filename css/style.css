@@ -1,6 +1,7 @@
 *,
 *::after,
 *::before {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: inherit; }
@@ -14,17 +15,25 @@
     height: 100%; }
     .header-main a {
       text-decoration: none;
-      color: white;
+      color: lightgray;
       text-transform: uppercase;
       font-size: .8rem;
       margin-left: 20px; }
+      .header-main a:hover {
+        font-weight: 300;
+        color: white; }
     .header-main__primary {
       position: relative;
       top: 5px;
       left: 2rem; }
       .header-main__primary a {
+        font-weight: 100;
         position: relative;
-        left: 3rem; }
+        left: 3rem;
+        letter-spacing: 1px; }
+        .header-main__primary a:hover {
+          font-weight: 300;
+          color: white; }
       .header-main__primary-image {
         position: relative;
         height: 4vh;
@@ -34,9 +43,23 @@
       text-align: right;
       width: 50%; }
       .header-main__secondary a {
+        font-weight: 100;
         display: inline-block;
         position: relative;
         top: 1.35rem; }
+  @media (max-width: 375px) {
+    .header .header {
+      width: 100%; }
+      .header .header-main {
+        position: relative; }
+        .header .header-main__primary a {
+          opacity: 0; }
+        .header .header-main__primary-image {
+          position: relative;
+          top: .6rem;
+          left: 4.5rem; }
+        .header .header-main__secondary {
+          opacity: 0; } }
 
 .section {
   display: flex;
@@ -59,7 +82,7 @@
       color: #34485d;
       letter-spacing: 1px; }
       .section-about__primary-span:first-child {
-        font-weight: normal; }
+        font-weight: 400; }
     .section-about_btn {
       display: inline-block;
       position: relative;
@@ -85,6 +108,27 @@
       .section-about_sub-image {
         width: auto;
         height: 40rem; }
+    @media (max-width: 375px) {
+      .section-about .section {
+        height: 85vh;
+        display: flex;
+        flex-flow: column-reverse; }
+        .section-about .section-main {
+          height: 32.5vh;
+          margin-left: 1rem;
+          margin-right: 1rem; }
+        .section-about .section-about__primary-span {
+          display: flex;
+          font-size: 1.5rem;
+          padding-bottom: 0;
+          letter-spacing: 0; }
+        .section-about .section-about_sub {
+          width: 100vw; }
+          .section-about .section-about_sub-image {
+            width: auto;
+            height: 20rem; }
+        .section-about .section-secondary__paragraph {
+          font-size: 1rem; } }
   .section-secondary__paragraph {
     font-size: 1.5rem;
     color: #34485d;
@@ -118,6 +162,17 @@
       .section-media-primary__arrow:hover {
         width: 1.8rem;
         cursor: pointer; }
+  @media (max-width: 375px) {
+    .section-media .section-media-primary {
+      margin-left: 2rem;
+      margin-right: 2rem;
+      top: 10rem; }
+      .section-media .section-media-primary__title {
+        font-size: 1.2rem; }
+      .section-media .section-media-primary__paragraph {
+        font-size: .8rem; }
+      .section-media .section-media-primary__arrow {
+        width: 1rem; } }
 
 .socialmedia-about-header {
   font-size: 3rem; }
@@ -216,48 +271,6 @@
       font-size: .8rem; }
 
 @media (max-width: 375px) {
-  .header {
-    width: 100%; }
-    .header-main {
-      position: relative; }
-      .header-main__primary a {
-        opacity: 0; }
-      .header-main__primary-image {
-        position: relative;
-        top: .6rem;
-        left: 4.5rem; }
-      .header-main__secondary {
-        opacity: 0; }
-  .section {
-    height: 75vh;
-    display: flex;
-    flex-flow: column-reverse; }
-    .section-main {
-      height: 32.5vh;
-      margin-left: 1rem;
-      margin-right: 1rem; }
-    .section-about__primary-span {
-      display: flex;
-      font-size: 1.5rem;
-      padding-bottom: 0;
-      letter-spacing: 0; }
-    .section-about_sub {
-      width: 100vw; }
-      .section-about_sub-image {
-        width: auto;
-        height: 20rem; }
-    .section-secondary__paragraph {
-      font-size: 1rem; }
-  .section-media-primary {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    top: 10rem; }
-    .section-media-primary__title {
-      font-size: 1.2rem; }
-    .section-media-primary__paragraph {
-      font-size: .8rem; }
-    .section-media-primary__arrow {
-      width: 1rem; }
   .socialmedia-about-header {
     font-size: 1.2rem; }
   .socialmedia-about-paragraph {
